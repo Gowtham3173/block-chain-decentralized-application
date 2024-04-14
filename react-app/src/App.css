@@ -1,0 +1,249 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.welcome-message {
+  background: linear-gradient(90deg, #ac00f5, #c227a1, #ac00f5);
+  background-size: 400%;
+  font-size: 2.3rem;
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 2rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate1 5s infinite;
+}
+@keyframes animate1{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 100%;
+  }
+}
+@keyframes fadein{
+  0%{
+    opacity: 0;
+    transform: translateY(100px) scale(0.1);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.admin-button {
+  background-color: #000000;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: fadein 1s ;
+}
+
+.admin-button:hover {
+  background-color: #3c4754;
+}
+
+.login-button {
+  background-color:#000000;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  border: none;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s ease;
+  animation: fadein 1s ;  
+}
+
+.login-button:hover {
+  background-color:#3c4754;
+}
+
+.vote-button{
+  margin-left: 30px;
+  background-color:#403f3f;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  align-self: center;
+}
+
+.vote-button:hover {
+  margin-left: 0px;
+  background-color:#96b1d1;
+}
+
+
+.connected-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+  background-color: #000000;
+}
+
+.connected-header {
+  background: linear-gradient(90deg, #ac00f5, #c227a1, #ac00f5);
+  background-size: 400%;
+  font-size: 2.3rem;
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 2rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate1 5s infinite;
+}
+
+.connected-account {
+  font-family: Verdana, sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 0rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.connected-button {
+  background-color: #000000;
+  color: #fff;
+  font-size: 5rem;
+  border: 1px;
+  border-color: #3c4754;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.connected-button:hover {
+  background-color: #3c4754;
+}
+
+.connected-contract-address {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+.candidates-table {
+  color: #ffffff;
+  margin:10px 0;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 10px;
+  border-collapse: collapse;
+  width: 50%;
+  text-align:center;
+}
+
+.candidates-table th, .candidates-table td {
+  padding: 8px;
+  text-align: center;
+  border-left: 1px solid #fdfdfd;
+  border-bottom: 1px solid #fdfdfd;
+}
+
+.candidates-table th {
+  border: 1px rgb(255, 255, 255);
+  color: #fcf9f9;
+  background-color: #52aeb9;
+}
+
+.img {
+  opacity: 30%;
+  justify-content: center;
+  background-color: #000000;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  display: inline-flex;
+  border-radius: 30px;
+  padding: 1px 25px;
+  box-sizing: border-box;
+  cursor:pointer;
+  margin: 1px 25px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s;
+}
+
+.text {
+  opacity: 1;
+  position: absolute;
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 1.5%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size:180px;
+  font-weight: 500;
+
+}
+.text:hover{
+  opacity: 0;
+}
+.img:hover{
+  opacity: 1;
+  transform: translateY(-15px)
+}
+
+.img1 {
+  background-image: url(C:\Users\gosh3\react-app\images\Scr41.png);
+}
+.img2{
+  background-image: url(C:\Users\gosh3\react-app\images\Sc42.png);
+}
+.img3{
+  background-image: url(C:\Users\gosh3\react-app\images\Sc43.png);
+}
+.img4{
+  background-image: url(C:\Users\gosh3\react-app\images\Sc44.png);
+}
+
+
+input[type=number] {
+  position: absolute;
+  padding: 10px;
+  color: #fff;
+  align-content: center;
+  background-color: #000000;
+  border: 1.5px solid #ffffff;
+  border-radius:10px;
+  box-sizing: content-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+  justify-content: center;
+  
+}
+
